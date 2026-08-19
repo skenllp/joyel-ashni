@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyel &amp; Ashni — Wedding Invitation</title>
+  <meta name="description"
+    content="We joyfully invite you to the wedding of Joyel V George &amp; Ashni Bryana James on 28th November 2026 at Church Parish Hall, Kodenchery, Kozhikode, Kerala." />
+
+  <!-- Open Graph (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joyel-ashni.vercel.app/" />
+  <meta property="og:title" content="Joyel &amp; Ashni — Wedding Invitation" />
+  <meta property="og:description"
+    content="We joyfully invite you to our wedding on 28th November 2026 at Church Parish Hall, Kodenchery, Kozhikode, Kerala." />
+  <meta property="og:image" content="https://joyel-ashni.vercel.app/assets/images/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://joyel-ashni.vercel.app/assets/images/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Joyel &amp; Ashni Wedding Invitation — 28 November 2026" />
+  <meta property="og:site_name" content="Joyel &amp; Ashni Wedding" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Joyel &amp; Ashni — Wedding Invitation" />
+  <meta name="twitter:description" content="Wedding Invitation • 28 November 2026 • Church Parish Hall, Kodenchery" />
+  <meta name="twitter:image" content="https://joyel-ashni.vercel.app/assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://joyel-ashni.vercel.app/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@300;400;500;600&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <meta name="theme-color" content="#16281b" />
+</head>
+
+<body class="gate-active">
+
+  <!-- ===================== OPENING GATE ===================== -->
+  <div id="gate">
+    <div class="gate-image">
+      <img src="assets/images/couple hero.JPG" alt="Joyel and Ashni" />
+    </div>
+    <div class="gate-fade"></div>
+    <div class="gate-vignette"></div>
+    <button type="button" id="gate-enter" class="gate-content" aria-label="Tap to open the invitation">
+      <span class="gate-corner tl"></span>
+      <span class="gate-corner tr"></span>
+      <span class="gate-corner bl"></span>
+      <span class="gate-corner br"></span>
+      <span class="gate-top">
+        <span class="gate-ornament">
+          <span class="gate-line"></span>
+          <span class="gate-diamond"></span>
+          <span class="gate-line"></span>
+        </span>
+        <span class="gate-label">Wedding Invitation</span>
+        <span class="gate-names">Joyel &amp; Ashni</span>
+        <span class="gate-date">28 · 11 · 2026</span>
+      </span>
+      <span class="gate-bottom">
+        <span class="gate-tap">
+          <span class="gate-tap-ring"></span>
+          <span class="gate-tap-icon"><i class="fas fa-envelope-open-text" aria-hidden="true"></i></span>
+        </span>
+        <span class="gate-tap-text">Tap to Open Invitation</span>
+      </span>
+    </button>
+  </div>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <!--
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <svg viewBox="0 0 100 100" class="preloader-ring">
+        <circle cx="50" cy="50" r="42"></circle>
+      </svg>
+      <span class="preloader-initials">T &amp; A</span>
+    </div>
+  </div>
+  -->
+
+  <!-- ===================== GRAIN OVERLAY ===================== -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== MUSIC TOGGLE ===================== -->
+  <button id="musicToggle" class="music-toggle" aria-label="Toggle background music">
+    <i class="fa-solid fa-music"></i>
+  </button>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/images/pehla nasha song.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <!-- ===================== SIDE NAV DOTS ===================== -->
+  <nav class="side-nav" aria-label="Section navigation">
+    <a href="#hero"      class="side-nav__dot" data-label="Welcome"      aria-current="true"></a>
+    <a href="#countdown" class="side-nav__dot" data-label="Countdown"></a>
+    <a href="#couple"    class="side-nav__dot" data-label="Couple"></a>
+    <a href="#events"    class="side-nav__dot" data-label="Events"></a>
+    <a href="#gallery"   class="side-nav__dot" data-label="Gallery"></a>
+  </nav>
+
+  <!-- ===================== HERO / REVEAL ===================== -->
+  <section id="hero" class="hero is-open">
+
+    <div class="hero__backdrop">
+      <img src="assets/images/hero bg.JPG" alt="" class="hero__bg-photo" />
+      <div class="hero__gradient"></div>
+    </div>
+
+    <!-- Solid cover — hides photo until arch opens -->
+    <div class="hero__cover" id="heroCover" aria-hidden="true"></div>
+
+    <!-- Ambient floating sparkles -->
+    <div class="hero__floaters" aria-hidden="true">
+      <span class="floater floater--1">✦</span>
+      <span class="floater floater--2">✦</span>
+      <span class="floater floater--3">✦</span>
+    </div>
+
+    <!-- Botanical corner accents -->
+    <span class="corner-leaf corner-leaf--tl" aria-hidden="true"></span>
+    <span class="corner-leaf corner-leaf--tr" aria-hidden="true"></span>
+
+    <div class="hero__stage is-revealed" id="heroStage">
+
+      <!-- The Nikah Arch — commented out; gate replaces this entry point -->
+      <!--
+      <div class="arch-frame" id="archFrame">
+
+        <svg class="arch-leaf arch-leaf--left" id="archLeft" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+          <path d="M220,420 L220,120 C220,55 175,10 110,0 L110,420 Z" />
+          <path class="arch-leaf__inline" d="M110,20 C165,32 200,68 200,122 L200,400" />
+        </svg>
+
+        <svg class="arch-leaf arch-leaf--right" id="archRight" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,420 L0,120 C0,55 45,10 110,0 L110,420 Z" />
+          <path class="arch-leaf__inline" d="M110,20 C55,32 20,68 20,122 L20,400" />
+        </svg>
+
+        <svg class="garland" viewBox="0 0 440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="garland__string" d="M10,10 Q220,70 430,10" />
+          <g class="garland__buds">
+            <circle cx="40"  cy="24" r="5"></circle>
+            <circle cx="80"  cy="35" r="6"></circle>
+            <circle cx="120" cy="43" r="5"></circle>
+            <circle cx="160" cy="48" r="6"></circle>
+            <circle cx="200" cy="51" r="5"></circle>
+            <circle cx="240" cy="51" r="5"></circle>
+            <circle cx="280" cy="48" r="6"></circle>
+            <circle cx="320" cy="43" r="5"></circle>
+            <circle cx="360" cy="35" r="6"></circle>
+            <circle cx="400" cy="24" r="5"></circle>
+          </g>
+        </svg>
+
+        <button type="button" class="arch-cta" id="archCta" aria-label="Open the invitation">
+          <span class="arch-cta__ring"></span>
+          <span class="arch-cta__label">Open the Invitation</span>
+        </button>
+
+        <div class="ring-particles" id="ringParticles" aria-hidden="true"></div>
+      </div>
+      -->
+
+      <!-- Revealed content -->
+      <div class="hero__reveal" id="heroReveal">
+        <p class="eyebrow reveal-item" data-reveal="1">Two are better than one</p>
+
+        <p class="hero__names reveal-item" data-reveal="2">
+          <span class="hero__name">Joyel V George</span>
+          <span class="hero__amp">&amp;</span>
+          <span class="hero__name">Ashni Bryana James</span>
+        </p>
+      </div>
+
+    </div><!-- /.hero__stage -->
+
+    <a href="#countdown" class="scroll-cue is-visible" id="scrollCue" aria-label="Scroll to next section">
+      <span class="scroll-cue__stem"></span>
+      <span class="scroll-cue__text">Scroll</span>
+    </a>
+
+  </section><!-- /#hero -->
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo-badge" aria-hidden="true">
+      <span class="nav-logo shimmer-gold">J &amp; A</span>
+    </div>
+  </nav>
+
+  <!-- ===== COUNTDOWN ===== -->
+  <section id="countdown">
+    <div class="countdown-bg" aria-hidden="true"></div>
+    <div class="countdown-content">
+      <span class="section-eyebrow" data-aos="fade-up">The Big Day</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+        Counting Down to Forever
+      </h2>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200" style="justify-content:center;">
+        <span class="ornament-line" style="background:linear-gradient(90deg,transparent,var(--gold));"></span>
+        <span class="ornament-flower" style="color:var(--gold);">✿</span>
+        <span class="ornament-line right" style="background:linear-gradient(90deg,var(--gold),transparent);"></span>
+      </div>
+
+      <div class="countdown-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <span class="countdown-number" id="cd-days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <span class="countdown-number" id="cd-hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <span class="countdown-number" id="cd-minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <span class="countdown-number" id="cd-seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <p data-aos="fade-up" data-aos-delay="400"
+        style="margin-top:40px; font-family:var(--font-serif); font-size:clamp(16px,2.5vw,20px); color:rgba(248,244,237,0.7); font-style:italic;">
+        28th November 2026 &bull; 11:00 AM onwards &bull; Church Parish Hall, Kodenchery, Kozhikode
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== OPENING INVITATION ===== -->
+  <section id="opening">
+    <div class="opening-bg-pattern" aria-hidden="true"></div>
+    <div class="opening-content">
+      <div class="opening-cross" data-aos="fade-up" aria-hidden="true">&#10014;</div>
+      <span class="section-eyebrow" data-aos="fade-up">The Union of Two Souls</span>
+      <h1 class="section-title" data-aos="fade-up" data-aos-delay="100">
+        A Blessed Wedding Ceremony
+      </h1>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">✿</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <div class="opening-ornament-bloom" data-aos="scale-in" data-aos-delay="200" aria-hidden="true">
+        <span class="bloom-flower">✿</span>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <blockquote class="opening-quote">
+          "Two are better than one... if either of them falls down,<br/>
+          One can help the other up....<br/>
+          A cord of three strands is not quickly broken"
+          <br /><br />
+          <em>— Ecclesiastes 4:9 - 12</em>
+        </blockquote>
+      </div>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="300">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">✿</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" style="margin-bottom:32px;">
+        <p style="font-family:var(--font-serif); font-size:clamp(18px,2.8vw,22px); color:var(--text-medium); line-height:1.8; max-width:680px; margin:0 auto 24px;">
+          <strong>Mr. George Joseph &amp; Mrs. Jiji George</strong><br/>
+          <em style="font-size:0.9em; opacity:0.8;">Vilakunnel House</em>
+        </p>
+        <p style="font-family:var(--font-sans); font-size:clamp(16px,2.5vw,19px); color:var(--text-medium); line-height:1.9; max-width:600px; margin:0 auto;">
+          Solicit your esteemed gracious presence on the auspicious occasion<br/>
+          of the Minnukettu ceremony of their beloved son
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLESSED COUPLE — single photo + family cards ===== -->
+  <section id="couple">
+    <div class="couple-bg-pattern" aria-hidden="true"></div>
+    <div class="couple-content">
+      <span class="section-eyebrow" data-aos="fade-up">The Blessed Couple</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Bride &amp; Groom</h2>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">✿</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <!-- Family cards -->
+      <div class="parents-grid" style="margin-top:0;">
+        <!-- Groom's Family -->
+        <div class="parents-card" data-aos="fade-left">
+          <p class="parents-card-title">Groom's Family</p>
+          <span class="parents-card-name">Joyel V George</span>
+          <div class="parents-card-parent">
+            <strong>Son of</strong>
+            Mr. George Joseph<br />&amp;<br />
+            Mrs. Jiji George
+          </div>
+        </div>
+
+        <!-- Bride's Family -->
+        <div class="parents-card" data-aos="fade-right">
+          <p class="parents-card-title">Bride's Family</p>
+          <span class="parents-card-name">Ashni Bryana James</span>
+          <div class="parents-card-parent">
+            <strong>Daughter of</strong>
+            Mr. Deepak James<br />&amp;<br />
+            Mrs. Virginia James
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section id="events">
+    <div class="events-content">
+      <span class="section-eyebrow" data-aos="fade-up">Mark Your Calendar</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Wedding Celebrations</h2>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">✿</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <div class="events-grid">
+        <!-- Reception -->
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-icon">
+            <i class="fas fa-glass-cheers" aria-hidden="true"></i>
+          </div>
+          <p class="event-type">Celebration</p>
+          <h3 class="event-title">Reception</h3>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-calendar" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Date</span>
+              <span class="event-detail-value">Friday, 20 November 2026</span>
+            </div>
+          </div>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Time</span>
+              <span class="event-detail-value">Cake Ceremony: 7:00 PM | Dinner: 8:30 PM</span>
+            </div>
+          </div>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Venue</span>
+              <span class="event-detail-value">Surat Farm - Ram Mandir Marg, Behind D-3/D4, Vasant Kunj, Near Fortis Hospital, New Delhi</span>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Surat+Garden%2C+Shanti+Kunj+Main%2C+Sector+D%2C+Vasant+Kunj%2C+New+Delhi%2C+Delhi+110070" target="_blank" rel="noopener noreferrer" class="maps-btn"
+            aria-label="Open Reception venue in Google Maps">
+            <i class="fas fa-map" aria-hidden="true"></i>
+            Open in Google Maps
+          </a>
+        </div>
+
+        <!-- Minnukettu -->
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-icon">
+            <i class="fas fa-ring" aria-hidden="true"></i>
+          </div>
+          <p class="event-type">Traditional Ceremony</p>
+          <h3 class="event-title">Minnukettu</h3>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-calendar" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Date</span>
+              <span class="event-detail-value">Saturday, 28 November 2026</span>
+            </div>
+          </div>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Time</span>
+              <span class="event-detail-value">From 11:00 AM onwards</span>
+            </div>
+          </div>
+
+          <div class="event-detail">
+            <div class="event-detail-icon">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </div>
+            <div class="event-detail-text">
+              <span class="event-detail-label">Venue</span>
+              <span class="event-detail-value">Church Parish Hall, Kodenchery, Kozhikode, Kerala</span>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=C2M3%2B3VV+kodenchery+parish+hall%2C+Punnakkadu%2C+Kodenchery%2C+Kerala+673580" target="_blank" rel="noopener noreferrer" class="maps-btn"
+            aria-label="Open Minnukettu venue in Google Maps">
+            <i class="fas fa-map" aria-hidden="true"></i>
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 48px; text-align: center;" data-aos="fade-up" data-aos-delay="300">
+        <p style="font-family:var(--font-serif); font-style:italic; font-size:clamp(16px,2.5vw,19px); color:var(--text-medium); line-height:1.8;">
+          Sharing the happiness:<br/>
+          <strong style="color:var(--gold);">Jojo &amp; Rachit</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <div class="gallery-content">
+      <span class="section-eyebrow" data-aos="fade-up">Cherished Moments</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Gallery</h2>
+
+      <div class="ornament-divider" data-aos="fade-in" data-aos-delay="200">
+        <span class="ornament-line"></span>
+        <span class="ornament-flower">✿</span>
+        <span class="ornament-line right"></span>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-frame">
+            <img src="assets/images/image 1.jpeg" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-frame">
+            <img src="assets/images/image 2.jpeg" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-frame">
+            <img src="assets/images/image 3.JPG" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="gallery-frame">
+            <img src="assets/images/image 4.jpeg" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="gallery-frame">
+            <img src="assets/images/image 5.jpeg" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="gallery-frame">
+            <img src="assets/images/image 6.JPG" alt="Joyel and Ashni" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE SECTION ===== -->
+  <section id="quote-section">
+    <div class="quote-bg" aria-hidden="true"></div>
+    <div class="quote-content">
+      <span class="quote-mark" data-aos="fade-in" aria-hidden="true">"</span>
+      <p class="quote-translation" data-aos="fade-up" data-aos-delay="100">
+        "Two are better than one... if either of them falls down,<br/>
+        One can help the other up....<br/>
+        A cord of three strands is not quickly broken"
+      </p>
+      <span class="quote-source" data-aos="fade-up" data-aos-delay="200">— Ecclesiastes 4:9 - 12</span>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <span class="corner-leaf corner-leaf--bl" aria-hidden="true"></span>
+    <span class="corner-leaf corner-leaf--br" aria-hidden="true"></span>
+    <div class="footer-content">
+      <p class="footer-names" data-aos="fade-up">
+        Joyel V George<br class="footer-names-break" />&amp;<br class="footer-names-break" />Ashni Bryana James
+      </p>
+
+      <p class="footer-date" data-aos="fade-up" data-aos-delay="200">
+        28 &middot; 11 &middot; 2026
+      </p>
+
+      <div class="footer-divider" data-aos="fade-in" data-aos-delay="300"></div>
+
+      <div data-aos="fade-up" data-aos-delay="300" style="margin-bottom:48px;">
+        <p
+          style="font-family:var(--font-serif); font-style:italic; font-size:clamp(14px,2vw,17px); color:rgba(248,244,237,0.55); line-height:1.9; max-width:480px; margin:0 auto;">
+          "May God bless you both and shower His grace upon your union."
+        </p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; align-items:center; gap:24px; margin-bottom:48px;"
+        data-aos="fade-up" data-aos-delay="400">
+        <div style="display:flex; gap:24px; flex-wrap:wrap; justify-content:center;">
+          <a href="https://www.google.com/maps/search/?api=1&query=C2M3%2B3VV+kodenchery+parish+hall%2C+Punnakkadu%2C+Kodenchery%2C+Kerala+673580" target="_blank" rel="noopener noreferrer" class="maps-btn"
+            style="color:#16281b; background:var(--gold-200); border-color:var(--gold-200);">
+            <i class="fas fa-church"></i> Wedding Venue
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Surat+Garden%2C+Shanti+Kunj+Main%2C+Sector+D%2C+Vasant+Kunj%2C+New+Delhi%2C+Delhi+110070" target="_blank" rel="noopener noreferrer" class="maps-btn"
+            style="color:#16281b; background:var(--gold-200); border-color:var(--gold-200);">
+            <i class="fas fa-glass-cheers"></i> Reception Venue
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-bottom" data-aos="fade-in">
+        Made with <span style="color:var(--gold);">&#9829;</span> for Joyel &amp; Ashni's blessed union
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <!-- GSAP for parallax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/countdown.js"></script>
+
+</body>
+
+</html>
