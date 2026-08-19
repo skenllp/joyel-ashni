@@ -116,6 +116,14 @@ function initMusicToggle() {
   const music = document.getElementById('bgMusic');
   if (!btn || !music) return;
 
+  music.loop = true;
+
+  // Guarantee continuous loop
+  music.addEventListener('ended', () => {
+    music.currentTime = 0;
+    music.play().catch(() => {});
+  });
+
   btn.addEventListener('click', () => {
     if (music.paused) {
       music.play()
@@ -230,16 +238,22 @@ function initGate() {
       gate.setAttribute('aria-hidden', 'true');
     }, 1100);
 
-    // Auto-start music (arch is disabled; gate is now the entry trigger)
+    // Auto-start music in continuous loop
     const music    = document.getElementById('bgMusic');
     const musicBtn = document.getElementById('musicToggle');
-    if (music && musicBtn) {
-      music.volume = 0.55;
-      music.play()
-        .then(() => musicBtn.classList.add('is-playing'))
-        .catch(() => {
-          // Autoplay blocked — user can tap the music button manually
-        });
+    if (music) {
+      music.loop = true;
+      music.volume = 0.6;
+      const playPromise = music.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            if (musicBtn) musicBtn.classList.add('is-playing');
+          })
+          .catch(() => {
+            // Autoplay blocked — user can tap the music button manually
+          });
+      }
     }
   }
 
